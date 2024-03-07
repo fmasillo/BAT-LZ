@@ -21,6 +21,7 @@ This will create the following executables:
 `uncompress` is a simple program to uncompress the files compressed by the previous programs.
 
 To compute the Suffix Array, this implementation uses a script called gensa in kkp [1].
+To generate the Suffix Tree, this implementation uses a modified code of Dotan Tsadok.
 
 ## Usage
 
