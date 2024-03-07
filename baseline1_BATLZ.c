@@ -276,8 +276,8 @@ void main (int argc, char **argv)
   initialize(n,argc == 2 ? n : atoi(argv[2]));
 
 	// recover SA after wm construction, to save space
-    SA = myalloc(n*sizeof(uintData));
-    for (i=0;i<n;i++) SA[ISA[i]] = i; 
+  SA = myalloc(n*sizeof(uintData));
+  for (i=0;i<n;i++) SA[ISA[i]] = i; 
 
 	// parsing
 
@@ -297,7 +297,6 @@ void main (int argc, char **argv)
     copyPhrase(i,i+len,source);
     if (len == 0) 
     {
-      // printf("U[i] = %d\n", U[i]);
       printf("(0,0,%d)\n",T[i]);
       z++;
     }
@@ -306,18 +305,14 @@ void main (int argc, char **argv)
       int lenOut = 0;
       int sourceOut = source;
       int currentLen = 0;
-      // printf("source = %d, len = %d\n", source, len);
       while(lenOut < len)
       {
         while(U[i+lenOut] % (MAX+1) != 0 && lenOut < len)
         {
-          // printf("U[i+lenOut] = %d\n", U[i+lenOut]);
           lenOut++;
           currentLen++;
         }
-        // if(U[i+lenOut] % (MAX+1) == 0)
-        //   printf("U[i+lenOut] = %d\n", U[i+lenOut]);
-        printf ("(%d,%d,%d)\n",sourceOut,currentLen,T[i+lenOut]);
+        printf("(%d,%d,%d)\n",sourceOut,currentLen,T[i+lenOut]);
         lenOut++;
         sourceOut = source+lenOut;
         currentLen = 0;
@@ -325,11 +320,6 @@ void main (int argc, char **argv)
       }
       if(sourceOut <= source+len)
       {
-        // printf("TO WRITE\n");
-        // for(int j = sourceOut; j < source+len; j++)
-        // {
-        //   printf("U[j] = %d\n", U[j]);
-        // }
         printf ("(%d,%d,%d)\n",sourceOut,source+len-sourceOut,T[i+len]);
         z++;
       }
@@ -339,37 +329,6 @@ void main (int argc, char **argv)
 
   printf("\nz = %li\n",z);
   fprintf(stderr,"\n\nz = %li\n",z);
-
-  // // print U
-  // for(int i = 0; i < n; i++)
-  // {
-  //   printf("U[%d] = %d\n", i, U[i]);
-  // }
-
-  // // now cut the phrases that exceed max
-  // if (argc > 2)
-  // { 
-  //   uint64_t zp;
-  //   MAX = atoi(argv[2]);
-  //   while (MAX > 0)
-  //   { 
-  //     zp = z; 
-  //     for (i = 0; i < n; i++)
-  //       if (U[i] && (U[i] % (MAX+1) == 0)) 
-  //         zp++;
-  //     printf("\nwith c = %li: %li phrases\n",MAX,zp);
-  //     fprintf(stderr,"\n\nwith c = %li: %li phrases\n",MAX,zp);
-  //     MAX -= 5;
-  //   }
-	// }
-
-  // if (argc == 2)
-  // { 
-  //   uint64_t u = 0;
-  //   for (i=0;i<n;i++) if (U[i] > u) u = U[i];
-  //   fprintf(stderr,"Maximum chain length = %li\n",u);
-  // }
-  // fprintf(stderr,"\n");
 
   free(T); free(SA); free(ISA); free(Map); free(D); free(U);
   exit(0);

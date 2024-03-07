@@ -31,9 +31,8 @@ wmatrix M; // wmatrix of SA
 
 segm S; // segment structures, one per wm level
 
-	// initializes all the structures, given SA and ISA of length n
-	// and maximum allowed chain length
-
+// initializes all the structures, given SA and ISA of length n
+// and maximum allowed chain length
 void initialize (uint64_t n, uint64_t maxChain)
 { 
   uint64_t i;
