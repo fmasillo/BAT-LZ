@@ -1,0 +1,28 @@
+This directory contains a simple tool demonstrating the use of parsing
+algorithms. Run the program without arguments for more details.
+
+Below is an example session assuming there is a file named 'data' in the
+examples/ directory.
+
+
+# Compilation
+> make clean
+> make
+
+# Compute SA
+> ./gensa data data.sa
+
+# Count the number of phrases in the LZ77 parsing using three different
+# algorithms. In the first case a default algorithm (kkp3) is used.
+> ./count data
+> ./count data kkp2
+> ./count data kkp1s
+
+Note: if the time for reading the suffix array is included in the total parsing
+time, the fastest algorithm is kkp1s. However, Linux caching prevents from
+easily observing this effect. If the file is not big enough, any program that
+accesses it, after it was already read into memory by other program, is likely
+to spend very little time on disk I/O. This is because the file is largely
+already present in memory. To avoid this effect, limit the RAM amount on your
+system or use sufficiently big files, or make sure the file is not cached
+between runs (e.g. restart the system, read another big file into memory).

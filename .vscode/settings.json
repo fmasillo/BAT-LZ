@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "segm.h": "c",
+        "wmatrix.h": "c",
+        "functional": "c",
+        "memory": "c",
+        "optional": "c",
+        "sstream": "c"
+    }
+}
