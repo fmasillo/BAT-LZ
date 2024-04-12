@@ -66,10 +66,17 @@ Where `<compressed_file>` is the file obtained from the compression. Again, this
 - Francesco Masillo
 - Gonzalo Navarro
 
+## Citation
 
-## Reference and Citation
-To be added.
+```
+@article{liptak2024bat,
+  title={BAT-LZ out of hell},
+  author={Lipt{\'a}k, {\relax Zs}uzsanna and Masillo, Francesco and Navarro, Gonzalo},
+  journal={arXiv preprint arXiv:2403.09893},
+  year={2024}
+}
+```
 
-
+## References
 
 [1]: Juha Karkkainen, Dominik Kempa and Simon J. Puglisi, "Linear Time Lempel-Ziv Factorization: Simple, Fast, Small." In Proc. CPM 2013, LNCS vol. 7922, pp. 189-200. Springer 2013.
