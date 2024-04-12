@@ -1247,7 +1247,7 @@ SUFFIX_TREE* ST_CreateTree(unsigned char* str, DBL_WORD length)
    }
    heap+=sizeof(SUFFIX_TREE);
    tree->inversePointers = malloc(sizeof(NODE *) * (length + 2));
-   tree->costArray = malloc(sizeof(unsigned short int) * (length + 2));
+   tree->costArray = malloc(sizeof(unsigned int) * (length + 2));
    tree->maxStrDepth = malloc(sizeof(unsigned int) * (length + 2));
 #ifdef PREFIXSUM
    tree->prefixSumCostArray = malloc(sizeof(unsigned int) * (length + 2));
