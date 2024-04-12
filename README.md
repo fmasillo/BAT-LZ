@@ -23,6 +23,11 @@ This will create the following executables:
 To compute the Suffix Array, this implementation uses a script called gensa in kkp [1].
 To generate the Suffix Tree, this implementation uses a modified code of Dotan Tsadok.
 
+## References
+
+[1]: Juha Karkkainen, Dominik Kempa and Simon J. Puglisi, "Linear Time Lempel-Ziv Factorization: Simple, Fast, Small." In Proc. CPM 2013, LNCS vol. 7922, pp. 189-200. Springer 2013.
+
+
 ## Usage
 
 ```bash
@@ -68,6 +73,9 @@ Where `<compressed_file>` is the file obtained from the compression. Again, this
 
 ## Citation
 
+Zsuzsanna Lipták, Francesco Masillo, Gonzalo Navarro. BAT-LZ Out of Hell, arXiv (https://arxiv.org/html/2403.09893v1)
+
+bibtex:
 ```
 @article{liptak2024bat,
   title={BAT-LZ out of hell},
@@ -77,6 +85,3 @@ Where `<compressed_file>` is the file obtained from the compression. Again, this
 }
 ```
 
-## References
-
-[1]: Juha Karkkainen, Dominik Kempa and Simon J. Puglisi, "Linear Time Lempel-Ziv Factorization: Simple, Fast, Small." In Proc. CPM 2013, LNCS vol. 7922, pp. 189-200. Springer 2013.
