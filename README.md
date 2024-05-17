@@ -73,7 +73,7 @@ Where `<compressed_file>` is the file obtained from the compression. Again, this
 
 ## Citation
 
-Zsuzsanna Lipták, Francesco Masillo, Gonzalo Navarro. BAT-LZ Out of Hell, arXiv (https://arxiv.org/html/2403.09893v1)
+Zsuzsanna Lipták, Francesco Masillo, Gonzalo Navarro. BAT-LZ Out of Hell, arXiv (https://arxiv.org/abs/2403.09893v2)
 
 bibtex:
 ```
