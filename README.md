@@ -73,15 +73,25 @@ Where `<compressed_file>` is the file obtained from the compression. Again, this
 
 ## Citation
 
-Zsuzsanna Lipták, Francesco Masillo, Gonzalo Navarro. BAT-LZ Out of Hell, arXiv (https://arxiv.org/abs/2403.09893v2)
+Zsuzsanna Lipták, Francesco Masillo, Gonzalo Navarro. "BAT-LZ Out of Hell", In Proc. of the 35th Annual Symposium on Combinatorial Pattern Matching (CPM 2024), volume 296 of LIPIcs, pages 21:1–21:17. Schloss Dagstuhl - Leibniz-Zentrum für Informatik, 2024:
 
 bibtex:
 ```
-@article{liptak2024bat,
-  title={BAT-LZ out of hell},
-  author={Lipt{\'a}k, {\relax Zs}uzsanna and Masillo, Francesco and Navarro, Gonzalo},
-  journal={arXiv preprint arXiv:2403.09893},
-  year={2024}
+@inproceedings{LiptakM024,
+  author       = {{\relax Zs}uzsanna Lipt{\'{a}}k and
+                  Francesco Masillo and
+                  Gonzalo Navarro},
+  editor       = {Shunsuke Inenaga and
+                  Simon J. Puglisi},
+  title        = {{BAT-LZ} out of hell},
+  booktitle    = {35th Annual Symposium on Combinatorial Pattern Matching, {CPM} 2024,
+                  June 25-27, 2024, Fukuoka, Japan},
+  series       = {LIPIcs},
+  volume       = {296},
+  pages        = {21:1--21:17},
+  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year         = {2024},
+  doi          = {10.4230/LIPICS.CPM.2024.21},
 }
 ```
 
